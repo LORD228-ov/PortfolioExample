@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfolio Template</title>
-<!-- Main stylesheet link (edit path if moving file) -->
-<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Template</title>
+    <!-- Main stylesheet link (edit path if moving file) -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- HERO SECTION WRAPPER (Change avatar image inside img tag) -->
-<section class="hero">
-<div class="hero-content">
-<!-- Avatar image (swap src to change image) -->
-<img src="assets/portfolioLogo.jpg" alt="avatar" class="hero-avatar" />
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-<h2 class="greeting">Hello! I am <span class="name">Your Name</span></h2>
-
-
-<h1 class="title">A Designer who <br /> Judges a book <br /> by its <span class="highlight">cover</span>...</h1>
-<p class="subtitle">Because if the cover does not impress you, what else can?</p>
+    <!-- HERO SECTION WIREFRAME -->
+    <section class="container py-5 border rounded mt-4">
+        <h3 class="text-center mb-4">Hero Section (Wireframe)</h3>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <!-- Placeholder Avatar -->
+<div class="avatar-wrapper mx-auto">
+    <img src="assets/portfolioLogo.jpg" alt="avatar" class="avatar-img">
 </div>
-</section>
+                <p class="text-muted mt-2">Avatar Placeholder</p>
+            </div>
+            <div class="col-md-8">
+                <div class="placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-8"></span>
+                </div>
+                <p class="placeholder col-10 mt-3"></p>
+            </div>
+        </div>
+    </section>
 
+    <!-- ABOUT SECTION WIREFRAME -->
+    <section class="container py-5 border rounded mt-4">
+        <h3 class="text-center mb-4">About Section (Wireframe)</h3>
+        <div class="placeholder-glow">
+            <p class="placeholder col-8"></p>
+            <p class="placeholder col-10"></p>
+            <p class="placeholder col-6"></p>
+        </div>
+    </section>
 
-<!-- ABOUT SECTION -->
-<section class="about">
-<h2>I'm a Software Engineer.</h2>
-<p class="workplace">Currently, I'm a Software Engineer at <span class="company">Facebook</span>.</p>
-<p class="description">
-A self‑taught UI/UX designer, functioning in the industry for 3+ years now.
-I make meaningful and delightful digital products that create an equilibrium between user needs and business goals.
-</p>
-</section>
+    <!-- WORK EXPERIENCE WIREFRAME -->
+    <section class="container py-5 border rounded mt-4 mb-5">
+        <h3 class="text-center mb-4">Work Experience (Wireframe)</h3>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="border rounded p-3 text-center">
+                    <div class="bg-secondary mb-3" style="height:80px;"></div>
+                    <p class="placeholder col-8"></p>
+                    <p class="placeholder col-10"></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="border rounded p-3 text-center">
+                    <div class="bg-secondary mb-3" style="height:80px;"></div>
+                    <p class="placeholder col-8"></p>
+                    <p class="placeholder col-10"></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="border rounded p-3 text-center">
+                    <div class="bg-secondary mb-3" style="height:80px;"></div>
+                    <p class="placeholder col-8"></p>
+                    <p class="placeholder col-10"></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="border rounded p-3 text-center">
+                    <div class="bg-secondary mb-3" style="height:80px;"></div>
+                    <p class="placeholder col-8"></p>
+                    <p class="placeholder col-10"></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-<!-- WORK EXPERIENCE SECTION -->
-<section class="work">
-<h2>Work Experience</h2>
-
-
-<div class="work-grid">
-<!-- CARD 1 (Replace icon by editing img src) -->
-<div class="card">
-<img src="assets/icon1.png" alt="work icon" class="card-icon" />
-<h3>CIB on the Mobile</h3>
-<p>I lead product experience & functionality for our amazing app.</p>
-<button class="learn-btn">LEARN MORE</button>
-</div>
-
-
-<!-- CARD 2 -->
-<div class="card">
-<img src="assets/icon2.png" alt="work icon" class="card-icon" />
-<h3>CIB on the Mobile</h3>
-<p>I lead product experience & functionality for our amazing app.</p>
-<button class="learn-btn">LEARN MORE</button>
-</div>
-
-
-<!-- CARD 3 -->
-<div class="card">
-<img src="assets/icon3.png" alt="work icon" class="card-icon" />
-<h3>CIB on the Mobile</h3>
-<p>I lead product experience & functionality for our amazing app.</p>
-<button class="learn-btn">LEARN MORE</button>
-</div>
-
-
-<!-- CARD 4 -->
-<div class="card">
-<img src="assets/icon4.png" alt="work icon" class="card-icon" />
-<h3>CIB on the Mobile</h3>
-<p>I lead product experience & functionality for our amazing app.</p>
-<button class="learn-btn">LEARN MORE</button>
-</div>
-</div>
-</section>
-
-
-<!-- JS File (edit path if moved) -->
-<script src="main.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
