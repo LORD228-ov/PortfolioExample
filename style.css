@@ -1,4 +1,7 @@
 /* Base styling */
+body, body * {
+    color: #eee !important;
+}
 body {
     background: linear-gradient(180deg, #0b0018, #1a0033 60%, #2b0050);
     color: #eee;
@@ -7,13 +10,20 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #e6d9ff;
+    text-shadow: 0 0 14px rgba(140, 0, 255, 0.75);
+}
 h3 {
     color: #d8c4ff;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
 
-/* Section Cards */
 section {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -64,13 +74,27 @@ section {
     margin-bottom: 12px;
 }
 
-/* Typography placeholders */
 .placeholder {
     background: rgba(255,255,255,0.12) !important;
     border-radius: 6px;
 }
 
-/* Smooth transitions */
 * {
     transition: 0.3s ease;
+}
+.project-img-wrapper {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
