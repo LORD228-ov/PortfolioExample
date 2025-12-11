@@ -1,31 +1,50 @@
 fetch("scripts/data.json")
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
-        document.getElementById("skills-title").textContent = data.skillsTitle;
+
+        // document.getElementById("skills-title").textContent = data.skillsTitle;
+
+        // const softSkillsBox = document.getElementById("soft-skills");
+        // const progSkillsBox = document.getElementById("programming-skills");
+
+        // softSkillsBox.innerHTML = `<div><hr style="border-top: 5px solid rgb(255, 255, 255); width: 80%; margin: 10px auto;"></div>`;
+        // progSkillsBox.innerHTML = `<div><hr style="border-top: 5px solid rgb(255, 255, 255); width: 80%; margin: 10px auto;"></div>`;
+
+        // data.softSkills.forEach(skill => {
+        //     const p = document.createElement("p");
+        //     p.className = "fw-bold";
+        //     p.textContent = skill;
+        //     softSkillsBox.appendChild(p);
+        // });
+
+        // // Загружаем programming skills
+        // data.programmingSkills.forEach(skill => {
+        //     const p = document.createElement("p");
+        //     p.className = "fw-bold";
+        //     p.textContent = skill;
+        //     progSkillsBox.appendChild(p);
+        // });
+
         document.getElementById("projects-title").textContent = data.projectsTitle;
+        const container = document.getElementById("projects-container");
+        container.innerHTML = "";
 
-        // Soft Skills
-        const softSkills = document.getElementById("soft-skills");
-        data.skills.soft.forEach(skill => {
-            softSkills.innerHTML += `<div class="skill-box">${skill}</div>`;
-        });
+        data.projects.forEach(project => {
+            const col = document.createElement("div");
+            col.className = "col-sm-6 col-lg";
 
-        // Programming Skills
-        const programmingSkills = document.getElementById("programming-skills");
-        data.skills.programming.forEach(skill => {
-            programmingSkills.innerHTML += `<div class="skill-box">${skill}</div>`;
-        });
-
-        // Projects
-        const projectsContainer = document.getElementById("projects");
-        data.projects.forEach(p => {
-            projectsContainer.innerHTML += `
-                <a href="${p.link}" target="_blank" class="work-card col-md-6 col-lg-4">
-                    <img src="${p.image}" alt="${p.title}">
-                    <h4>${p.title}</h4>
-                    <p>${p.subtitle}</p>
+            col.innerHTML = `
+                <a href="${project.link}" target="_blank" class="text-decoration-none text-light">
+                    <div class="border rounded p-3 text-center h-100">
+                        <div class="project-img-wrapper mb-3">
+                            <img src="${project.image}" alt="Project Image">
+                        </div>
+                        <p class="fw-bold">${project.title}</p>
+                        <p class="fw-bold">${project.subtitle}</p>
+                    </div>
                 </a>
             `;
+
+            container.appendChild(col);
         });
-    })
-    .catch(err => console.error("Error loading JSON:", err));
+    });
