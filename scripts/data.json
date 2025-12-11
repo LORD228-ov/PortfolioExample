@@ -1,0 +1,22 @@
+{
+  "skillsTitle": "Skills",
+  "skills": {
+    "soft": ["Problem solution", "Leadership", "Creativity"],
+    "programming": ["JavaScript", "C#", "Unity", "HTML", "CSS"]
+  },
+  "projectsTitle": "Projects",
+  "projects": [
+    {
+      "title": "Meteorfall: Weird Fishes",
+      "subtitle": "Itch.io project – shmup",
+      "image": "assets/project1.jpg",
+      "link": "https://artistic-gremlin.itch.io/meteorfall-point-nemo"
+    },
+    {
+      "title": "Scooter Shooter",
+      "subtitle": "Itch.io project – twin-stick",
+      "image": "assets/project2.jpg",
+      "link": "https://teun-de-beer.itch.io/scooter-shooter"
+    }
+  ]
+}
