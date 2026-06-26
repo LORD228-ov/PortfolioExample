@@ -1,10 +1,16 @@
 .btn {
-  display: flex;
+  display: inline-flex;
+    align-items: center;
+    padding: 20px 50px;    
+
+    width: 520px;
+    height: 150px;
+
+    letter-spacing: 1px;
+
+    border-radius: 18px;
   justify-content: center;
-  align-items: center;
-  width: 13rem;
   overflow: hidden;
-  height: 3rem;
   background-size: 300% 300%;
   cursor: pointer;
   backdrop-filter: blur(1rem);
@@ -38,7 +44,7 @@
 strong {
   z-index: 2;
   font-family: "Avalors Personal Use";
-  font-size: 12px;
+  font-size: 54px;
   letter-spacing: 5px;
   color: #ffffff;
   text-shadow: 0 0 4px white;

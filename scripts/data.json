@@ -12,6 +12,24 @@
       "subtitle": "Itch.io project – twin-stick",
       "image": "assets/projectLogo2.jpg",
       "link": "https://teun-de-beer.itch.io/scooter-shooter"
+    },
+    {
+      "title": "Potion Commotion",
+      "subtitle": "Itch.io project – Local Multiplayer, Casual, Task Management",
+      "image": "assets/projectLogo3.png",
+      "link": "https://rhinemoon.itch.io/potion-commotion?secret=Fby1o6bJimblBkwQKZhjBuLva1c"
+    },
+    {
+      "title": "Hospital Service Client App",
+      "subtitle": "Client API part for client-server-DataBase communication",
+      "image": "assets/projectLogo4.jpg",
+      "link": "https://github.com/LORD228-ov/hospitalFinalProjectClient"
+    },
+    {
+      "title": "Hospital Service Server",
+      "subtitle": "Server API part for client-server-DataBase communication",
+      "image": "assets/projectLogo5.jpg",
+      "link": "https://github.com/LORD228-ov/hospitalFinalProjectServer"
     }
   ]
 }
